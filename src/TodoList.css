@@ -1,0 +1,21 @@
+.slide-enter {
+  opacity: 0;
+  transform: translateX(var(--translate));
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transform: none;
+  transition: opacity var(--timeout) ease-in, transform var(--timeout) ease-in;
+}
+
+.slide-exit {
+  opacity: 1;
+  transform: none;
+}
+
+.slide-exit-active {
+  opacity: 0;
+  transform: translateX(var(--translate));
+  transition: opacity var(--timeout) ease-out, transform var(--timeout) ease-out;
+}
