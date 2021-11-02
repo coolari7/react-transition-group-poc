@@ -20,7 +20,9 @@ export default function App() {
     <div className="m-2 text-sm text-gray-600">
       <form className="grid sm:flex gap-2" onSubmit={onFormSubmit}>
         <input
+          required
           type="text"
+          minLength="5"
           value={title}
           onChange={onTitleChange}
           placeholder="Buy eggs..."
@@ -28,7 +30,7 @@ export default function App() {
         />
         <button
           type="submit"
-          className="sm:min-w outline-none text-white bg-indigo-600 font-bold rounded-sm p-2"
+          className="outline-none text-white bg-indigo-600 font-bold rounded-sm p-2"
         >
           Add Todo
         </button>
