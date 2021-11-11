@@ -18,7 +18,6 @@ export default function App() {
 
   return (
     <div className="m-2 text-sm text-gray-600">
-      <img alt="boat-ride" src="/assets/boat-ride.jpg" />
       <form className="grid sm:flex gap-2" onSubmit={onFormSubmit}>
         <input
           required
